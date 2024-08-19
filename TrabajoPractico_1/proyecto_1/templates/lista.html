@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia de Peliculas</title>
+</head>
+<body>
+    <h1> Las peliculas de la trivia son:  </h1>
+    <ul>
+        {% for frase in asociar_frases%} #No estoy seguro si usar el dicionario o crear una lista de pleiculas aparte
+            <li>{{frase.pelicula}} </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+#Muestra la lista de peliculas disponibles
