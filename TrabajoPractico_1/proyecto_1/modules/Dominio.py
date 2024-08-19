@@ -13,3 +13,9 @@ def ordenar_datos (matriz):
     return datos_ordenados
 #ordeno alfabeticamente la matriz
 
+def asociar_frases (matriz):
+    frases={}
+    for i in matriz:
+        frases[i[0]]=i[1]
+    return frases
+#Se crea un diccionario donde cada frase tiene asociada una pelicula
