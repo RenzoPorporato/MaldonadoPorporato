@@ -7,6 +7,14 @@ def extraer_datos (nombre_archivo):
     return datos
 #Saco la informacion del archivo
 
+def listar_peliculas (nombre_archivo):
+    with open (nombre_archivo,"r") as archi:
+        lista_peliculas=sorted(list())
+        for i in archi:
+            fras,peli=i.split(";")
+            lista_peliculas.append(peli.strip().lower)
+    return lista_peliculas
+#Funcion que crea una lista que solo contiene las peliculas 
 
 def ordenar_datos (matriz):
     datos_ordenados=sorted(matriz,key=lambda x:x[1])
