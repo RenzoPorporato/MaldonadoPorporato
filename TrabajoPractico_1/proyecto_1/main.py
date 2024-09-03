@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, session
 from modules.Config import Config
 from modules.procesar_datos import extraer_datos, ordenar_peliculas
 from modules.manejar_resultados import guardar_resultado, cargar_resultados
-from random import random
+import random
 
 
 app = Flask(__name__)
@@ -26,6 +26,7 @@ def iniciar_trivia():
 
     if num_frases < 3:
         return redirect(url_for('index'))
+    
     
     session['usuario'] = usuario
     session['num_frases'] = num_frases

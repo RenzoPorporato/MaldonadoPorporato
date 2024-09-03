@@ -1,0 +1,14 @@
+[
+    {
+        "usuario": "Renzo",
+        "aciertos": 2,
+        "total": 3,
+        "fecha": "03/09/24 20:00"
+    },
+    {
+        "usuario": "Jose",
+        "aciertos": 2,
+        "total": 7,
+        "fecha": "03/09/24 20:01"
+    }
+]
