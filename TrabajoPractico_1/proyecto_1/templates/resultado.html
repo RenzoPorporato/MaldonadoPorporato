@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if correcto %}
+        <p>¡Correcto! 🎉</p>
+    {% else %}
+        <p>Incorrecto. La respuesta correcta era: {{ respuesta_correcta }}.</p>
+    {% endif %}
+    <a href="{{ url_for('trivia') }}">Continuar</a>
+{% endblock %}

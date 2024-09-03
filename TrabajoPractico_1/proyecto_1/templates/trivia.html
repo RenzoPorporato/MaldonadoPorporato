@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>¿A qué película pertenece esta frase?</h2>
+    <p>{{ frase }}</p>
+    <form action="{{ url_for('verificar_respuesta') }}" method="POST">
+        {% for opcion in opciones %}
+            <input type="radio" id="{{ opcion }}" name="opcion" value="{{ opcion }}" required>
+            <label for="{{ opcion }}">{{ opcion }}</label><br>
+        {% endfor %}
+        <button type="submit">Enviar Respuesta</button>
+    </form>
+{% endblock %}

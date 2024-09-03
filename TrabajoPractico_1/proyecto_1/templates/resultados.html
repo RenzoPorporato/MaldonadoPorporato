@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Resultados Históricos</h2>
+    <ul>
+        {% for resultado in resultados %}
+            <li>{{ resultado['usuario'] }}: {{ resultado['aciertos'] }}/{{ resultado['total'] }} - {{ resultado['fecha'] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Volver al inicio</a>
+{% endblock %}

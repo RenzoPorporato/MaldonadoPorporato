@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Listado de Películas</h2>
+    <ul>
+        {% for pelicula in peliculas %}
+            <li>{{ pelicula }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Volver al inicio</a>
+{% endblock %}

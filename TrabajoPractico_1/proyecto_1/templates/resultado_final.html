@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>¡Juego Terminado!</h2>
+    <p>Obtuviste {{ aciertos }} de {{ total }}.</p>
+    <a href="{{ url_for('index') }}">Volver al inicio</a>
+{% endblock %}

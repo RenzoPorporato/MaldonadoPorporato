@@ -1,6 +1,3 @@
-from flask import Flask
-
-app=Flask("__name__") #Se pasa el nombre de la aplicacion para que flask sepa donde buscar plantillas y recursos estaticos
-
-
-
+class Config:
+    SECRET_KEY = 'supersecretkey'
+    DEBUG = True
